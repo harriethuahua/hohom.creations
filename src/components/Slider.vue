@@ -8,10 +8,10 @@
 // import $ from 'jquery';
 
 export default {
-  name: "Slider",
+  name: 'Slider',
   data() {
     return {
-      coverSrc: require("@/assets/ogimage.jpg"),
+      coverSrc: require('@/assets/ogimage.jpg'),
     };
   },
 };

@@ -10,7 +10,7 @@
 // import $ from 'jquery';
 
 export default {
-  name: "Footer",
+  name: 'Footer',
 };
 </script>
 

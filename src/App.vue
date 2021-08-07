@@ -10,14 +10,14 @@
 
 <script>
 // import Timeline from "./components/Timeline.vue";
-import Header from "./components/Header.vue";
-import Content from "./components/Content.vue";
-import Slider from "./components/Slider.vue";
-import Footer from "./components/Footer.vue";
+import Header from './components/Header.vue';
+import Content from './components/Content.vue';
+import Slider from './components/Slider.vue';
+import Footer from './components/Footer.vue';
 // import $ from "jquery";
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Header,
     Content,
@@ -35,9 +35,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/style/variables.scss";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
+@import 'src/style/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 
 html {
   scroll-behavior: smooth;

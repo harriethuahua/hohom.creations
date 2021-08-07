@@ -19,24 +19,24 @@
 // import $ from 'jquery';
 
 export default {
-  name: "Content",
+  name: 'Content',
   data() {
     return {
       items: [
         {
-          src: require("@/assets/0802-2.jpg"),
-          description: "Lava Lava",
-          date: "2021-08-02",
+          src: require('@/assets/0802-2.jpg'),
+          description: 'Lava Lava',
+          date: '2021-08-02',
         },
         {
-          src: require("@/assets/0802.jpg"),
-          description: "Archimedes",
-          date: "2021-08-02",
+          src: require('@/assets/0802.jpg'),
+          description: 'Archimedes',
+          date: '2021-08-02',
         },
         {
-          src: require("@/assets/0730-3.jpg"),
-          description: "Seashell",
-          date: "2021-07-30",
+          src: require('@/assets/0730-3.jpg'),
+          description: 'Seashell',
+          date: '2021-07-30',
         },
       ],
     };

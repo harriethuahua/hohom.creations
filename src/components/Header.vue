@@ -8,15 +8,15 @@
 // import $ from 'jquery';
 
 export default {
-  name: "Header",
+  name: 'Header',
   data() {
     return {
-      logoSrc: require("@/assets/logo.jpg"),
+      logoSrc: require('@/assets/logo.jpg'),
     };
   },
   methods: {
     goTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     },
   },
 };
