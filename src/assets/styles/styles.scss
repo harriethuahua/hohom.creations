@@ -1,0 +1,19 @@
+@import './normalize';
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+html {
+  font-size: 16px;
+  line-height: 1.5rem;
+  width: 100vw;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-family: "Noto Sans TC", "MonteCarlo", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}

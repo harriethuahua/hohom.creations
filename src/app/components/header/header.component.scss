@@ -1,0 +1,82 @@
+@import 'src/assets/styles/styles';
+
+.logo {
+  background-image: url('/assets/logo.png');
+}
+
+.navbar {
+  position: relative;
+  height: 80px;
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: url('/assets/logo.png') center center no-repeat;
+    background-size: 100%;
+  }
+}
+
+.hamburger {
+  width: 45px;
+  cursor: pointer;
+  &:before, &:after, span {
+    background: $main;
+    content: '';
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    margin: 10px 0;
+    transition: 0.5s;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: $brightPink;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  overflow-y: scroll;
+  z-index: 5;
+  hr {
+    margin: 30px auto;
+  }
+  &__inner {
+    padding: 100px 30px;
+  }
+}
+
+.active {
+  .hamburger {
+    &:before {
+      transform: translateY(13px) rotate(135deg);
+    }
+    &:after {
+      transform: translateY(-13px) rotate(-135deg);
+    }
+    span {
+      transform: scale(0);
+    }
+  }
+  .menu {
+    transform: translateX(0);
+  }
+}
+
+.nav-link {
+  color: #fff;
+  &:hover {
+    color: $main;
+  }
+}
+.router-link-active {
+  color: $secondary !important;
+}

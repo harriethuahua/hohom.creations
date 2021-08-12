@@ -1,0 +1,37 @@
+<div class="header">
+
+  <div class="navbar fixed-top container-fluid">
+    <div class="hamburger" (click)="toggleMenu()">
+      <span></span>
+    </div>
+    <a class="logo" (click)="closeMenu()" [routerLink]="['/home']"></a>
+  </div>
+
+  <div class="menu">
+    <div class="menu__inner">
+      <div class="col">
+        <p class="h5 text-center mb-3">Vivre la vie que vous aimez.</p>
+        <p class="h6 text-center">熱愛自己的生活</p>
+      </div>
+      <hr class="w-50">
+      <div class="nav-item">
+        <a class="nav-link text-center h5" (click)="toggleMenu()" [routerLink]="['/home']">Home</a>
+        <a class="nav-link text-center h5" (click)="toggleMenu()" [routerLink]="['/artworks']">ArtWorks</a>
+        <a class="nav-link text-center h5" (click)="toggleMenu()" [routerLink]="['/customize']">Customize</a>
+      </div>
+      <hr class="w-50">
+      <div class="col">
+        <p class="h5 text-center mb-3">購買須知</p>
+        <ul>
+          <li class="mb-2">商品皆為手工製作，故實際長短有些許誤差均為正常。</li>
+          <li class="mb-2">運送過程中可能會產生纏繞現象，只需用梳子輕輕梳齊即可。</li>
+          <li class="mb-2">商品皆為手工製作，售出後概不退回，請三思後可接受再下訂。</li>
+          <li class="mb-2">商品因拍照角度或燈光會有少許色差，可另私訊詢問，請三思後可接受再下訂。</li>
+          <li class="mb-2">棉繩為自然米色無染無漂，黑色為棉籽而非瑕疵。</li>
+          <li class="mb-2">因商品大小及編法不一，故製作時間也會不同，一般製作為 1-3 天（不含運送期間），依訂單順序安排。若有急件或特殊狀況，請私訊討論。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</div>

@@ -1,0 +1,52 @@
+@import 'src/assets/styles/styles';
+
+
+h1 {
+  color: $secondary;
+}
+.categories {
+  flex-wrap: wrap;
+}
+.category {
+  position: relative;
+  overflow: hidden;
+  // width: 130px;
+  // height: 130px;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: float 4s ease-in-out infinite;
+}
+.title {
+  background: rgba(0,0,0,0.2);
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-wrap: wrap;
+  transition: all 0.3s;
+  &:hover {
+    background: rgba(0,0,0,0.1);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.2);
+  z-index: 5; 
+}
+.show {
+  display: block !important;
+}
+
+// 動畫
+@keyframes float {
+	0% { transform: translatey(0px); }
+	50% { transform: translatey(-5px); }
+	100% { transform: translatey(0px); }
+}

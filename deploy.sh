@@ -13,6 +13,6 @@ git add -A
 git commit -m 'deploy'
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:harriethuahua/hohom.creations.git master:gh-pages
+git push -f https://github.com/harriethuahua/hohom.creations.git master:gh-pages
 
 cd -
