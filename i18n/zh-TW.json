@@ -1,0 +1,49 @@
+{
+  "MENU": {
+    "HOME": "首頁",
+    "NEWS": "最新消息",
+    "LOOK_BOOK": "客製參考",
+    "TAP_ME": "現貨商品",
+    "CONTACT": "聯絡我們"
+  },
+  "CATEGORY": {
+    "0": "鑰匙圈／書籤",
+    "1": "生活物品",
+    "2": "居家裝飾",
+    "ORDER": {
+      "bracket": "支體",
+      "shape": "款式",
+      "color": "顏色",
+      "add_text": "是否加字"
+    }
+  },
+  "SHIPPING": {
+    "0": "全家店到店",
+    "1": "7-11 店到店",
+    "2": "萊爾富店到店"
+  },
+  "SEO": {
+    "WEBSITE_TITLE": "HOHOM Creations",
+    "WEBSITE_DESCRIPTION": "Vivre la vie que vous aimez.",
+    "HOME": {
+      "TITLE": "首頁",
+      "DESCRIPTION": ""
+    },
+    "ORDER": {
+      "TITLE": "訂製",
+      "DESCRIPTION": ""
+    },
+    "NEWS": {
+      "TITLE": "最新消息",
+      "DESCRIPTION": ""
+    },
+    "LOOK_BOOK": {
+      "TITLE": "客製參考",
+      "DESCRIPTION": ""
+    },
+    "TAP_ME": {
+      "TITLE": "現貨商品",
+      "DESCRIPTION": ""
+    }
+  }
+}

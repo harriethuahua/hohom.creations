@@ -1,0 +1,209 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$hello-primary: mat-palette($mat-indigo);
+$hello-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$hello-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$hello-theme: mat-light-theme((
+  color: (
+    primary: $hello-primary,
+    accent: $hello-accent,
+    warn: $hello-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($hello-theme);
+
+@import './normalize';
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+// Include ngx-owl-carousel
+// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import url('https://db.onlinewebfonts.com/c/5fd740bac1abfb826fb7e35ae963efc9?family=ABChanel+Corpo+Regular');
+
+@font-face {
+  font-family: 'Playlist';
+  src: url(../../assets/fonts/Playlist.otf) format("opentype");
+}
+html {
+  font-size: 16px;
+  line-height: 1.5rem;
+  width: 100vw;
+  -webkit-overflow-scrolling: touch;
+}
+html, body, * {
+  font-family: "Lato", "Noto Sans TC", sans-serif;
+  letter-spacing: 1px;
+
+  .titleFont {
+    &-bold {
+      font-weight: 800;
+    }
+    &.h6 {
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+    font-family: 'abchanel-corpo' !important;
+    font-weight: 400;
+    // font-family: 'Playfair Display';
+    // font-weight: 400;
+    letter-spacing: 0px;
+  }
+
+  .sloganFont {
+    font-family: "Playlist";
+  }
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+}
+hr {
+  height: 1px;
+}
+select, select:focus, textarea:focus, input:focus {
+  font-size: 1rem;
+}
+
+/*
+** 通用樣式
+*/
+.sectionTitle {
+  color: $main;
+}
+.reminder {
+  font-size: 0.7rem;
+  text-align: center;
+  color: $main;
+}
+.img-hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(80%);
+  }
+}
+// Angualr Select dropdown over bootstrap modal
+.cdk-global-overlay-wrapper, .cdk-overlay-container {
+  z-index: 99999 !important;
+}
+.btn {
+  transition: all 0.3s;
+  &:hover {
+    filter: brightness(110%);
+  }
+  &-main {
+    background-color: $main;
+    color: #fff;
+  }
+  &-pink {
+    background-color: $lierPink;
+    color: #fff;
+  }
+  &-website {
+    background-color: $website;
+    color: $main;
+  }
+  &-download {
+    &:hover {
+      filter: none;
+    }
+  }
+}
+
+// 商品樣式
+.shopItem {
+  width: 32%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  @media screen and (max-width:600px) {
+    width: 48%;
+  }
+
+  &-invisible {
+    min-width: 0;
+    opacity: 0;
+  }
+
+  &-info {
+    flex-grow: 1;
+    p {
+      line-height: 1rem;
+    }
+    .title {
+    }
+    .info {
+      color: $darkgray;
+      font-size: 0.7rem;
+    }
+    .price {
+      color: $main;
+    }
+  }
+}
+
+
+// Dark mode
+.dark-mode {
+  background-color: $darkgray !important;
+  .social-media {
+    .icon-container {
+      background-color: $website !important;
+      .icon {
+        filter: none !important;
+      }
+    }
+    .sloganFont {
+      color: $lightgray !important;
+    }
+  }
+}
+
+.lb-close {
+  display: none !important;
+}
+
+// 防止 Mobile auto zoom
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select, select:focus,
+  textarea, textarea:focus,
+  input, input:focus {
+    font-size: 1rem;
+  }
+}
